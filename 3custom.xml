@@ -78,7 +78,7 @@
 
   <!-- Framework repos -->
   <project path="frameworks/av" name="AOSP-11/frameworks_av" revision="11" remote="github" />
-  <project path="frameworks/base" name="UP5468-GE-ES44AC/frameworks_base" revision="11" remote="github" />
+  <project path="frameworks/base" name="UP5468-GE-ES44AC/android_framework_base" revision="11" remote="github" />
   <project path="frameworks/native" name="AOSP-11/frameworks_native" revision="11" remote="github" />
   <project path="frameworks/opt/datetimepicker" name="platform/frameworks/opt/datetimepicker" revision="refs/tags/android-10.0.0_r46" />
   <project path="frameworks/opt/net/wifi" name="AOSP-11/frameworks_opt_net_wifi" revision="11" remote="github" />
