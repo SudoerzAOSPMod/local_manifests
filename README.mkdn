@@ -36,3 +36,11 @@ $ brunch $device
 $ repo init -b android-11.0.0_r29
 
 ```
+
+### 此清单来源 ###
+
+```bash
+
+https://github.com/AOSP-11/local_manifests
+
+```

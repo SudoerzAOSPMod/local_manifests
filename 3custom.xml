@@ -41,7 +41,7 @@
   <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" remote="lineage" />
 
   <!-- General repos -->
-  <project path="build/make" name="AOSP-11/build" revision="11" remote="github">
+  <project path="build/make" name="UP5468-GE-ES44AC/build" revision="11" remote="github">
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -57,7 +57,7 @@
   <project path="bionic" name="AOSP-11/bionic" revision="11" remote="github" />
   <project path="build/blueprint" name="AOSP-11/build_blueprint" revision="11" remote="github" />
   <project path="device/custom/sepolicy" name="AOSP-11/device_custom_sepolicy" revision="11" remote="github" />
-  <project path="vendor/aosp" name="AOSP-11/vendor_aosp" revision="11" remote="github" />
+  <project path="vendor/aosp" name="UP5468-GE-ES44AC/vendor_aosp" revision="11" remote="github" />
   <project path="vendor/support" name="AOSP-11/vendor_support" revision="11" remote="github" />
 
   <!-- External repos -->
@@ -72,13 +72,13 @@
   <project path="hardware/libhardware" name="AOSP-11/hardware_libhardware" revision="11" remote="github" />
 
   <!-- Local_manifests -->
-  <project path="local_manifests" name="AOSP-11/local_manifests" revision="11" remote="github" >
+  <project path="local_manifests" name="UP5468-GE-ES44AC/local_manifests" revision="11" remote="github" >
     <linkfile src="sync.sh" dest="sync.sh" />
   </project>
 
   <!-- Framework repos -->
   <project path="frameworks/av" name="AOSP-11/frameworks_av" revision="11" remote="github" />
-  <project path="frameworks/base" name="AOSP-11/frameworks_base" revision="11" remote="github" />
+  <project path="frameworks/base" name="UP5468-GE-ES44AC/frameworks_base" revision="11" remote="github" />
   <project path="frameworks/native" name="AOSP-11/frameworks_native" revision="11" remote="github" />
   <project path="frameworks/opt/datetimepicker" name="platform/frameworks/opt/datetimepicker" revision="refs/tags/android-10.0.0_r46" />
   <project path="frameworks/opt/net/wifi" name="AOSP-11/frameworks_opt_net_wifi" revision="11" remote="github" />
@@ -104,10 +104,11 @@
   <project path="packages/apps/Jelly" name="android_packages_apps_Jelly" remote="lineage" />
   <project path="packages/apps/Launcher3" name="AOSP-11/packages_apps_Launcher3" revision="11" remote="github" />
   <project path="packages/apps/Nfc" name="AOSP-11/packages_apps_Nfc" revision="11" remote="github" />
+  <project path="packages/apps/PermissionController" name="UP5468-GE-ES44AC/packages_apps_PermissionController" revision="11" remote="github" />
   <project path="packages/apps/Settings" name="AOSP-11/packages_apps_Settings" revision="11" remote="github" />
+  <project path="packages/apps/SettingsGoogle" name="UP5468-GE-ES44AC/android_packages_apps_SettingsGoogle" revision="11" remote="github" />
   <project path="packages/apps/SettingsIntelligence" name="AOSP-11/packages_apps_SettingsIntelligence" revision="11" remote="github" />
   <project path="packages/apps/ThemePicker" name="AOSP-11/packages_apps_ThemePicker" revision="11" remote="github" />
-  <project path="packages/apps/TouchGestures" name="AOSP-11/packages_apps_TouchGestures" revision="11" remote="github" />
   <project path="packages/apps/UnifiedEmail" name="AOSP-11/packages_apps_UnifiedEmail" revision="11" remote="github" />
 
   <!-- Recovery Repos -->
@@ -119,8 +120,5 @@
   <project path="system/vold" name="AOSP-11/system_vold" revision="11" remote="github" />
   <project path="system/sepolicy" name="AOSP-11/system_sepolicy" revision="11" remote="github" />
   <project path="system/update_engine" name="AOSP-11/system_update_engine" revision="11" remote="github" />
-
-  <!-- vendor apps -->
-  <project path="vendor/apps/FaceUnlock" name="vendor_apps_FaceUnlock" revision="11" remote="gitea" />
 
 </manifest>
