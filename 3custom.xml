@@ -45,6 +45,12 @@
   <project path="hardware/qcom-caf/sm8250/media" name="LineageOS/android_hardware_qcom_media" groups="qcom,pdk-qcom" revision="lineage-18.1-caf-sm8250" />
   <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" remote="lineage" />
 
+  <!-- lineage hardware interfaces repo -->
+  <project path="hardware/lineage/interfaces" name="LineageOS/android_hardware_lineage_interfaces" revision="lineage-18.1"/>
+ 
+  <!-- xiaomi hardware interfaces repo -->
+  <project path="hardware/xiaomi" name="LineageOS/android_hardware_xiaomi" revision="lineage-18.1"/>
+
   <!-- General repos -->
   <!--<project path="build/make" name="UP5468-GE-ES44AC/build" revision="11" remote="github">
     <copyfile src="core/root.mk" dest="Makefile" />
