@@ -15,15 +15,28 @@
   <project path="hardware/qcom-caf/thermal" name="android_hardware_qcom_thermal" remote="lineage" />
   <project path="hardware/qcom-caf/wlan" name="AOSP-11/hardware_qcom-caf_wlan" revision="11" remote="github" />
   <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="lineage" />
-  <project path="vendor/codeaurora/telephony" name="AOSP-11/vendor_codeaurora_telephony" revision="11" remote="github" />
-  <project path="vendor/qcom/opensource/audio" name="android_vendor_qcom_opensource_audio" remote="lineage" />
-  <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="android_vendor_qcom_opensource_bluetooth-commonsys-intf" remote="lineage" />
-  <project path="vendor/qcom/opensource/commonsys/bluetooth_ext" name="android_vendor_qcom_opensource_bluetooth_ext" remote="lineage" />
-  <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="android_vendor_qcom_opensource_packages_apps_Bluetooth" remote="lineage" />
-  <project path="vendor/qcom/opensource/commonsys/system/bt" name="android_vendor_qcom_opensource_system_bt" remote="lineage" />
-  <project path="vendor/qcom/opensource/cryptfs_hw" name="AOSP-11/vendor_qcom_opensource_cryptfs_hw" revision="11" remote="github" />
-  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="AOSP-11/vendor_qcom_opensource_data-ipa-cfg-mgr" revision="11" remote="github" />
-  <project path="vendor/qcom/opensource/dataservices" name="AOSP-11/vendor_qcom_opensource_dataservices" revision="11" remote="github" />
+  <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" revision="lineage-18.1" remote="lineage" />
+  
+  <!-- QCOM vendor additions -->
+  <project path="vendor/qcom/opensource/audio" name="android_vendor_qcom_opensource_audio" revision="lineage-18.1" remote="lineage" />
+  <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="android_vendor_qcom_opensource_bluetooth-commonsys-intf" revision="lineage-18.1" remote="lineage" />
+  <project path="vendor/qcom/opensource/commonsys-intf/display" name="android_vendor_qcom_opensource_display-commonsys-intf" revision="lineage-18.1" remote="lineage" />
+  <project path="vendor/qcom/opensource/commonsys/bluetooth_ext" name="android_vendor_qcom_opensource_bluetooth_ext" revision="lineage-18.1" remote="lineage" />
+  <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="android_vendor_qcom_opensource_packages_apps_Bluetooth" revision="lineage-18.1" remote="lineage" />
+  <project path="vendor/qcom/opensource/commonsys/system/bt" name="android_vendor_qcom_opensource_system_bt" revision="lineage-18.1" remote="lineage" />
+  <project path="vendor/qcom/opensource/cryptfs_hw" name="android_vendor_qcom_opensource_cryptfs_hw" revision="lineage-18.1" remote="lineage" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" revision="lineage-18.1" remote="lineage" />
+  <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" revision="lineage-18.1" remote="lineage" />
+  <project path="vendor/qcom/opensource/interfaces" name="android_vendor_qcom_opensource_interfaces" revision="lineage-18.1" remote="lineage">
+    <copyfile dest="vendor/qcom/opensource/Android.bp" src="os_pickup.bp" />
+  </project>
+  <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" revision="lineage-18.1" remote="lineage" />
+  <project path="vendor/qcom/opensource/thermal-engine" name="android_vendor_qcom_opensource_thermal-engine" revision="lineage-18.1" remote="lineage" />
+  <project path="vendor/qcom/opensource/usb" name="android_vendor_qcom_opensource_usb" revision="lineage-18.1" remote="lineage" />
+  <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom_opensource_vibrator" revision="lineage-18.1" remote="lineage" />
+  <project path="vendor/qcom/opensource/wfd-commonsys" name="
+android_vendor_qcom_opensource_wfd-commonsys" revision="lineage-18.1" remote="lineage" />
+  
   <project path="hardware/qcom-caf/common" name="android_hardware_qcom-caf_common" groups="qcom,pdk-qcom" remote="lineage" >
     <!-- add guard for AOSP hardware/qcom dir -->
     <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
@@ -37,22 +50,15 @@
     <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8250/Android.bp" />
     <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8250/Android.mk" />
   </project>
-  <project path="vendor/qcom/opensource/interfaces" name="android_vendor_qcom_opensource_interfaces" remote="lineage">
-    <copyfile dest="vendor/qcom/opensource/Android.bp" src="os_pickup.bp" />
-  </project>
   <project path="hardware/qcom-caf/sm8250/audio" name="LineageOS/android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk-qcom" revision="lineage-18.1-caf-sm8250" />
   <project path="hardware/qcom-caf/sm8250/display" name="LineageOS/android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="lineage-18.1-caf-sm8250" />
   <project path="hardware/qcom-caf/sm8250/media" name="LineageOS/android_hardware_qcom_media" groups="qcom,pdk-qcom" revision="lineage-18.1-caf-sm8250" />
-  <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" remote="lineage" />
-
-  <!-- lineage hardware interfaces repo -->
-  <project path="hardware/lineage/interfaces" name="LineageOS/android_hardware_lineage_interfaces" revision="lineage-18.1"/>
  
   <!-- xiaomi hardware interfaces repo -->
   <project path="hardware/xiaomi" name="LineageOS/android_hardware_xiaomi" revision="lineage-18.1"/>
 
   <!-- General repos -->
-  <!--<project path="build/make" name="UP5468-GE-ES44AC/build" revision="11" remote="github">
+  <project path="build/make" name="SudoerzAOSPMod/build" revision="11" remote="github">
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -60,7 +66,7 @@
     <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
-  </project>-->
+  </project>
   <project path="build/soong" name="AOSP-11/build_soong" revision="11" remote="github" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
@@ -68,7 +74,7 @@
   <project path="bionic" name="AOSP-11/bionic" revision="11" remote="github" />
   <project path="build/blueprint" name="AOSP-11/build_blueprint" revision="11" remote="github" />
   <project path="device/custom/sepolicy" name="AOSP-11/device_custom_sepolicy" revision="11" remote="github" />
-  <!--<project path="vendor/aosp" name="UP5468-GE-ES44AC/vendor_aosp" revision="11" remote="github" />-->
+  <!--<project path="vendor/aosp" name="SudoerzAOSPMod/vendor_aosp" revision="11" remote="github" />-->
   <project path="vendor/support" name="AOSP-11/vendor_support" revision="11" remote="github" />
 
   <!-- External repos -->
@@ -78,7 +84,7 @@
   <project path="external/tinycompress" name="AOSP-11/external_tinycompress" revision="11" remote="github" />
 
   <!-- Hardware repos -->
-  <project path="hardware/custom/interfaces" name="AOSP-11/hardware_custom_interfaces" revision="11" remote="github" />
+  <project path="hardware/lineage/interfaces" name="LineageOS/android_hardware_lineage_interfaces" revision="lineage-18.1" remote="github" />
   <project path="hardware/interfaces" name="AOSP-11/hardware_interfaces" revision="11" remote="github" />
   <project path="hardware/libhardware" name="AOSP-11/hardware_libhardware" revision="11" remote="github" />
 
@@ -89,8 +95,8 @@
 
   <!-- Framework repos -->
   <project path="frameworks/av" name="AOSP-11/frameworks_av" revision="11" remote="github" />
-  <!--<project path="frameworks/base" name="UP5468-GE-ES44AC/android_framework_base" revision="11" remote="github" />-->
-  <project path="frameworks/native" name="AOSP-11/frameworks_native" revision="11" remote="github" />
+  <!--<project path="frameworks/base" name="SudoerzAOSPMod/android_framework_base" revision="11" remote="github" />-->
+  <project path="frameworks/native" name="SudoerzAOSPMod/frameworks_native" revision="11" remote="github" />
   <project path="frameworks/opt/datetimepicker" name="platform/frameworks/opt/datetimepicker" revision="refs/tags/android-10.0.0_r46" />
   <project path="frameworks/opt/net/wifi" name="AOSP-11/frameworks_opt_net_wifi" revision="11" remote="github" />
   <project path="frameworks/opt/telephony" name="AOSP-11/frameworks_opt_telephony" revision="11" remote="github" />
@@ -109,18 +115,13 @@
   <project path="packages/apps/CarrierConfig" name="AOSP-11/packages_apps_CarrierConfig" revision="11" remote="github" />
   <project path="packages/apps/DeskClock" name="AOSP-11/packages_apps_DeskClock" revision="11" remote="github" />
   <project path="packages/apps/Dialer" name="AOSP-11/packages_apps_Dialer" revision="11" remote="github" />
-  <project path="packages/apps/Email" name="platform/packages/apps/Email" revision="refs/tags/android-10.0.0_r46" />
-  <project path="packages/apps/Etar" name="AOSP-11/packages_apps_Etar" revision="11" remote="github" />
-  <project path="packages/apps/ExactCalculator" name="android_packages_apps_ExactCalculator" remote="lineage" />
-  <project path="packages/apps/Jelly" name="android_packages_apps_Jelly" remote="lineage" />
   <project path="packages/apps/Launcher3" name="AOSP-11/packages_apps_Launcher3" revision="11" remote="github" />
   <project path="packages/apps/Nfc" name="AOSP-11/packages_apps_Nfc" revision="11" remote="github" />
-  <!--<project path="packages/apps/PermissionController" name="UP5468-GE-ES44AC/packages_apps_PermissionController" revision="11" remote="github" />-->
+  <project path="packages/apps/PermissionController" name="SudoerzAOSPMod/packages_apps_PermissionController" revision="11" remote="github" />
   <project path="packages/apps/Settings" name="AOSP-11/packages_apps_Settings" revision="11" remote="github" />
-  <!--<project path="packages/apps/SettingsGoogle" name="UP5468-GE-ES44AC/android_packages_apps_SettingsGoogle" revision="11" remote="github" />-->
+  <!--<project path="packages/apps/SettingsGoogle" name="SudoerzAOSPMod/android_packages_apps_SettingsGoogle" revision="11" remote="github" />-->
   <project path="packages/apps/SettingsIntelligence" name="AOSP-11/packages_apps_SettingsIntelligence" revision="11" remote="github" />
   <project path="packages/apps/ThemePicker" name="AOSP-11/packages_apps_ThemePicker" revision="11" remote="github" />
-  <project path="packages/apps/UnifiedEmail" name="AOSP-11/packages_apps_UnifiedEmail" revision="11" remote="github" />
 
   <!-- Recovery Repos -->
   <project path="bootable/recovery" name="AOSP-11/bootable_recovery" revision="11" remote="github" />
@@ -129,7 +130,7 @@
   <project path="system/bt" name="AOSP-11/system_bt" revision="11" remote="github" />
   <project path="system/core" name="AOSP-11/system_core" revision="11" remote="github" />
   <project path="system/vold" name="AOSP-11/system_vold" revision="11" remote="github" />
-  <project path="system/sepolicy" name="AOSP-11/system_sepolicy" revision="11" remote="github" />
+  <project path="system/sepolicy" name="LineageOS/android_system_sepolicy" revision="lineage-18.1" remote="github" />
   <project path="system/update_engine" name="AOSP-11/system_update_engine" revision="11" remote="github" />
 
 </manifest>
