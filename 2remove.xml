@@ -120,7 +120,6 @@
 
   <!-- Packages repos -->
   <remove-project name="platform/packages/apps/Bluetooth" />
-  <remove-project name="platform/packages/apps/Calendar" />
   <remove-project name="platform/packages/apps/CarrierConfig" />
   <remove-project name="platform/packages/apps/DeskClock" />
   <remove-project name="platform/packages/apps/Dialer" />
