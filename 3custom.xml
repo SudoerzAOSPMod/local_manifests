@@ -76,6 +76,8 @@
   <project path="bionic" name="AOSP-11/bionic" revision="11" remote="github" />
   <project path="build/blueprint" name="AOSP-11/build_blueprint" revision="11" remote="github" />
   <project path="device/custom/sepolicy" name="AOSP-11/device_custom_sepolicy" revision="11" remote="github" />
+  <project path="device/lineage/sepolicy" name="LineageOS/android_device_lineage_sepolicy" revision="lineage-18.1" remote="github" />
+  <project path="tools/extract-utils" name="LineageOS/android_tools_extract-utils" revision="lineage-18.1" remote="github" />
   <!--<project path="vendor/aosp" name="SudoerzAOSPMod/vendor_aosp" revision="11" remote="github" />-->
   <project path="vendor/support" name="AOSP-11/vendor_support" revision="11" remote="github" />
 
