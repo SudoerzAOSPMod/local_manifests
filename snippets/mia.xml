@@ -44,6 +44,7 @@
   <project path="external/json-c" name="Project-Mia/android_external_json-c" groups="qcom,qssi" remote="github" />
   <project path="external/mksh" name="Project-Mia/android_external_mksh" groups="pdk" remote="github" />
   <project path="external/tinycompress" name="Project-Mia/android_external_tinycompress" groups="pdk" remote="github" />
+  <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" revision="refs/tags/android-11.0.0_r46" />
 
   <!-- frameworks -->
   <project path="frameworks/native" name="Project-Mia/android_frameworks_native" groups="pdk" remote="github" />
