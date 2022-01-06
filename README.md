@@ -1,4 +1,6 @@
-# Welcome to Sudoerz's Mod[Private]
+# Welcome to Sudoerz's Mod[PRIVATE]
+
+# WARN:THIS PROJECT WIP,
 
  Getting Started
 ---------------

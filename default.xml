@@ -46,6 +46,10 @@
   <remote  name="sudoerz"
            fetch="https://github.com/SudoerzAOSPMod"
            revision="refs/heads/12" />
+		   
+  <remote  name="sudoerz-priv"
+           fetch="git@github.com:SudoerzAOSPMod"
+           revision="refs/heads/12" />
 
   <superproject name="platform/superproject" remote="aosp" revision="android-12.0.0_r19" />
   <contactinfo bugurl="go/repo-bug" />
