@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <remote  name="sudoerz"
+           fetch="https://github.com/SudoerzAOSPMod"
+           revision="refs/heads/12" />
+
+  <remote  name="sudoerz-priv"
+           fetch="git@github.com:SudoerzAOSPMod"
+           revision="refs/heads/12" />
+
   <project path="build/make" name="build" remote="sudoerz" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
