@@ -1149,5 +1149,8 @@
   <!-- ArrowOS changes -->
   <include name="remove.xml" />
   <include name="arrow.xml" />
+  
+  <!-- Sudoerz's Mod changes -->
+  <include name="sudoerz.xml" />
 
 </manifest>
