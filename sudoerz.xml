@@ -6,7 +6,7 @@
            revision="refs/heads/12" />
 
   <remote  name="sudoerz-priv"
-           fetch="git@github.com:SudoerzAOSPMod"
+           fetch="ssh://git@github.com:443/SudoerzAOSPMod"
            revision="refs/heads/12" />
 
   <project path="build/make" name="build" remote="sudoerz" >
@@ -24,21 +24,21 @@
   </project>
 
   <!-- device repos -->
-  <project path="device/sudoerz/sepolicy" name="device_sudoerz_sepolicy" remote="sudoerz-priv" />
+  <!--<project path="device/sudoerz/sepolicy" name="device_sudoerz_sepolicy" remote="sudoerz-priv" />-->
 
   <!-- framework repos -->
-  <project path="frameworks/av" name="frameworks_av" remote="sudoerz-priv" />
-  <project path="frameworks/base" name="frameworks_base" remote="sudoerz-priv" />
-  <project path="frameworks/native" name="frameworks_native" remote="sudoerz-priv" />
-  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="sudoerz-priv" />
+  <!--<project path="frameworks/av" name="frameworks_av" remote="sudoerz-priv" />-->
+  <!--<project path="frameworks/base" name="frameworks_base" remote="sudoerz-priv" />-->
+  <!--<project path="frameworks/native" name="frameworks_native" remote="sudoerz-priv" />-->
+  <!--<project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="sudoerz-priv" />-->
 
   <!-- packages repos -->
-  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="sudoerz-priv" />
-  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="sudoerz-priv" />
-  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="sudoerz-priv" />
+  <!--<project path="packages/apps/Settings" name="packages_apps_Settings" remote="sudoerz-priv" />-->
+  <!--<project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="sudoerz-priv" />-->
+  <!--<project path="packages/services/Telephony" name="packages_services_Telephony" remote="sudoerz-priv" />-->
 
   <!-- vendor repos -->
-  <project path="vendor/sudoerz" name="vendor_sudoerz" remote="sudoerz-priv" />
+  <!--<project path="vendor/sudoerz" name="vendor_sudoerz" remote="sudoerz-priv" />-->
   <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="sudoerz" />
   <project path="vendor/support" name="vendor_support" remote="sudoerz" />
 
