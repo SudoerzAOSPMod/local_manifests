@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <project path="manifest" name="local_manifests" remote="sudoerz" />
   <project path="build/blueprint" name="android_build_blueprint" groups="pdk,tradefed" remote="arrow" />
 
   <project path="art" name="android_art" remote="arrow" />
