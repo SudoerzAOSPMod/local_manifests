@@ -42,7 +42,9 @@
 
   <!-- packages repos -->
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="sudoerz-priv" />
+  <project path="packages/apps/FGWorkMode" name="packages_apps_FGWorkMode" remote="sudoerz-priv" />
   <project path="packages/modules/Permission" name="packages_modules_Permission" remote="sudoerz" />
+  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="sudoerz" />
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="sudoerz-priv" />
   <project path="packages/services/Telephony" name="packages_services_Telephony" remote="sudoerz-priv" />
 
