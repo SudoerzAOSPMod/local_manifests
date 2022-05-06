@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="sudoerz"
+           fetch="https://github.com/SudoerzAOSPMod"
+           revision="refs/heads/12.1" />
+
+  <remote  name="sudoerz-priv"
+           fetch="https://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@github.com/SudoerzAOSPMod"
+           revision="refs/heads/12.1" />
+
+  <project path="manifest" name="local_manifests" remote="sudoerz-priv" />
+
+  <project path="build/make" name="build" remote="sudoerz" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+
+  <project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="sudoerz" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- device repos -->
+  <project path="device/sudoerz/sepolicy" name="device_sudoerz_sepolicy" remote="sudoerz-priv" />
+  <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr" remote="sudoerz" />
+
+  <!-- hardware repos -->
+  <!--<project path="hardware/sudoerz" name="hardware_sudoerz" remote="sudoerz" />-->
+  <!--<project path="hardware/xiaomi" name="hardware_xiaomi" remote="sudoerz" />-->
+
+  <!-- framework repos -->
+  <project path="frameworks/av" name="frameworks_av" remote="sudoerz-priv" />
+  <project path="frameworks/base" name="frameworks_base" remote="sudoerz-priv" />
+  <project path="frameworks/native" name="frameworks_native" remote="sudoerz-priv" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="sudoerz-priv" />
+
+  <!-- packages repos -->
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="sudoerz-priv" />
+  <!--<project path="packages/apps/FGWorkMode" name="packages_apps_FGWorkMode" remote="sudoerz-priv" />-->
+  <project path="packages/modules/Permission" name="packages_modules_Permission" remote="sudoerz" />
+  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="sudoerz" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="sudoerz-priv" />
+  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="sudoerz-priv" />
+
+  <!-- vendor repos -->
+  <project path="vendor/sudoerz" name="vendor_sudoerz" remote="sudoerz-priv" />
+  <!--<project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="sudoerz" />-->
+  <project path="vendor/support" name="vendor_support" remote="sudoerz" />
+
+</manifest>

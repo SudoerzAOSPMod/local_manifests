@@ -1132,5 +1132,6 @@
   <!-- ArrowOS changes -->
   <include name="remove.xml" />
   <include name="arrow.xml" />
+  <include name="sudoerz.xml" />
 
 </manifest>
