@@ -10,11 +10,11 @@
            revision="refs/heads/12" />
 
   <remote  name="sudoerz-priv"
-           fetch="https://<TOKEN>@github.com/SudoerzAOSPMod"
+           fetch="https://TOKEN@github.com/SudoerzAOSPMod"
            revision="refs/heads/12.1" />
 
   <remote  name="sudoerz-priv_legacy"
-           fetch="https://<TOKEN>@github.com/SudoerzAOSPMod"
+           fetch="https://TOKEN@github.com/SudoerzAOSPMod"
            revision="refs/heads/12" />
 
   <project path="build/make" name="build" remote="sudoerz" >
