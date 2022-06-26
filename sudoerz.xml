@@ -2,19 +2,19 @@
 <manifest>
 
   <remote  name="sudoerz"
-           fetch="https://github.com/SudoerzAOSPMod"
+           fetch="ssh://git@github.com/SudoerzAOSPMod"
            revision="refs/heads/12.1" />
 
   <remote  name="sudoerz_legacy"
-           fetch="https://github.com/SudoerzAOSPMod"
+           fetch="ssh://git@github.com/SudoerzAOSPMod"
            revision="refs/heads/12" />
 
   <remote  name="sudoerz-priv"
-           fetch="https://<TOKEN>@github.com/SudoerzAOSPMod"
+           fetch="ssh://git@github.com/SudoerzAOSPMod"
            revision="refs/heads/12.1" />
 
   <remote  name="sudoerz-priv_legacy"
-           fetch="https://<TOKEN>@github.com/SudoerzAOSPMod"
+           fetch="ssh://git@github.com/SudoerzAOSPMod"
            revision="refs/heads/12" />
 
   <project path="build/make" name="build" remote="sudoerz" >
@@ -39,9 +39,9 @@
   <!-- hardware repos -->
   <project path="hardware/sudoerz" name="hardware_sudoerz" remote="sudoerz_legacy" />
   <project path="hardware/xiaomi" name="hardware_xiaomi" remote="sudoerz_legacy" />
-  <project path="hardware/qcom-caf/sm8250/audio" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="sudoerz" revision="12.0-caf-sm8250" />
-  <project path="hardware/qcom-caf/sm8250/display" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="sudoerz" revision="12.0-caf-sm8250" />
-  <project path="hardware/qcom-caf/sm8250/media" name="android_hardware_qcom_media" groups="qcom" remote="sudoerz" revision="12.0-caf-sm8250" />
+  <project path="hardware/qcom-caf/sm8250/audio" name="hardware_qcom-caf_sm8250_audio" groups="qcom,qcom_audio" remote="sudoerz" revision="12.0-caf-sm8250" />
+  <project path="hardware/qcom-caf/sm8250/display" name="hardware_qcom-caf_sm8250_display" groups="pdk,qcom,qcom_display" remote="sudoerz" revision="12.0-caf-sm8250" />
+  <project path="hardware/qcom-caf/sm8250/media" name="hardware_qcom-caf_sm8250_media" groups="qcom" remote="sudoerz" revision="12.0-caf-sm8250" />
 
   <!-- framework repos -->
   <project path="frameworks/av" name="frameworks_av" remote="sudoerz-priv" />
