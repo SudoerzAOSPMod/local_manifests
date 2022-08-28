@@ -74,6 +74,7 @@
   <remove-project name="platform/external/e2fsprogs" />
   <remove-project name="platform/external/f2fs-tools" />
   <remove-project name="platform/external/gptfdisk" />
+  <remove-project name="platform/external/jemalloc_new" />
   <remove-project name="platform/external/mksh" />
   <remove-project name="platform/external/selinux" />
   <remove-project name="platform/external/tinycompress" />
@@ -127,6 +128,7 @@
   <!-- system -->
   <remove-project name="platform/system/bt" />
   <remove-project name="platform/system/core" />
+  <remove-project name="platform/system/extras" />
   <remove-project name="platform/system/libhwbinder" />
   <remove-project name="platform/system/libziparchive" />
   <remove-project name="platform/system/media" />
