@@ -103,4 +103,5 @@
   <project path="vendor/qcom/opensource/thermal-engine" name="Project-Mia/android_vendor_qcom_opensource_thermal-engine" groups="qcom,waipio-vendor" remote="github" />
   <project path="vendor/qcom/opensource/usb" name="Project-Mia/android_vendor_qcom_opensource_usb" groups="qcom,waipio-vendor" remote="github" />
   <project path="vendor/qcom/opensource/vibrator" name="Project-Mia/android_vendor_qcom_opensource_vibrator" groups="qcom,waipio-vendor" remote="github" />
+  <project path="vendor/qcom/opensource/wfd-commonsys" name="Project-Mia/android_vendor_qcom_opensource_wfd-commonsys" groups="qcom,waipio-video" remote="github" />
 </manifest>
