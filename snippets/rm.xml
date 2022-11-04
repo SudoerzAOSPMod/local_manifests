@@ -19,6 +19,10 @@
   <!-- hardware -->
   <remove-project name="platform/hardware/libhardware" />
 
+  <!-- packages -->
+  <remove-project name="platform/packages/apps/Browser2" />
+  <remove-project name="platform/packages/apps/QuickSearchBox" />
+
   <!-- system -->
   <remove-project name="platform/system/core" />
   <remove-project name="platform/system/media" />
