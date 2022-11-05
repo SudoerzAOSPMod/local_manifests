@@ -72,6 +72,7 @@
   <project path="hardware/qcom-caf/wlan" name="Project-Mia/android_hardware_qcom_wlan" groups="qcom,waipio-vendor" remote="github" revision="takina-caf" />
 
   <!-- packages -->
+  <project path="packages/apps/Settings" name="Project-Mia/android_packages_apps_Settings" groups="pdk-fs" remote="github" />
   <project path="packages/modules/Bluetooth" name="Project-Mia/android_packages_modules_Bluetooth" groups="pdk" remote="github" />
   <project path="packages/resources/devicesettings" name="Project-Mia/android_packages_resources_devicesettings" remote="github" />
 
