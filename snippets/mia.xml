@@ -100,6 +100,7 @@
 
   <!-- vendor -->
   <project path="vendor/codeaurora/telephony" name="Project-Mia/android_vendor_codeaurora_telephony" groups="qcom,qssi" remote="github" />
+  <project path="vendor/gms" name="Hello-Hanami-Yuuri/android_vendor_gms" remote="gitlab" clone-depth="1" />
   <project path="vendor/mia" name="Project-Mia/android_vendor_mia" remote="github" />
   <project path="vendor/nxp/nfc" name="Project-Mia/android_vendor_nxp_nfc" groups="nxp" remote="github" />
   <project path="vendor/nxp/opensource/interfaces/nfc" name="Project-Mia/android_vendor_nxp_interfaces_opensource_nfc" groups="qcom,qssi" remote="github" />
