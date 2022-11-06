@@ -101,6 +101,10 @@
   <!-- vendor -->
   <project path="vendor/codeaurora/telephony" name="Project-Mia/android_vendor_codeaurora_telephony" groups="qcom,qssi" remote="github" />
   <project path="vendor/mia" name="Project-Mia/android_vendor_mia" remote="github" />
+  <project path="vendor/nxp/nfc" name="Project-Mia/android_vendor_nxp_nfc" groups="nxp" remote="github" />
+  <project path="vendor/nxp/opensource/interfaces/nfc" name="Project-Mia/android_vendor_nxp_interfaces_opensource_nfc" groups="qcom,qssi" remote="github" />
+  <project path="vendor/nxp/secure_element" name="Project-Mia/android_vendor_nxp_secure_element" groups="nxp" remote="github" />
+  <project path="vendor/nxp/secure_element_extns" name="Project-Mia/android_vendor_nxp_secure_element_extns" groups="nxp" remote="github" />
   <project path="vendor/qcom/opensource/audio" name="Project-Mia/android_vendor_qcom_opensource_audio" groups="qcom,qssi" remote="github" />
   <project path="vendor/qcom/opensource/audio-hal/st-hal" name="Project-Mia/android_vendor_qcom_opensource_audio-hal_st-hal" groups="qcom,lahaina" remote="github" />
   <project path="vendor/qcom/opensource/commonsys/display" name="Project-Mia/android_vendor_qcom_opensource_display-commonsys" groups="qcom,qssi" remote="github" />
