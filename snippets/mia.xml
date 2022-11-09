@@ -77,7 +77,6 @@
   <project path="packages/apps/Launcher3" name="Project-Mia/android_packages_apps_Launcher3" groups="pdk-fs" remote="github" />
   <project path="packages/apps/Music" name="Project-Mia/android_packages_apps_Music" groups="pdk-fs" remote="github" />
   <project path="packages/apps/Settings" name="Project-Mia/android_packages_apps_Settings" groups="pdk-fs" remote="github" />
-  <project path="packages/apps/SettingsIntelligence" name="Project-Mia/android_packages_apps_SettingsIntelligence" groups="pdk-fs" remote="github" />
   <project path="packages/apps/ThemePicker" name="Project-Mia/android_packages_apps_ThemePicker" groups="pdk-fs" remote="github" />
   <project path="packages/apps/WallpaperPicker2" name="Project-Mia/android_packages_apps_WallpaperPicker2" groups="pdk-fs" remote="github" />
   <project path="packages/modules/Bluetooth" name="Project-Mia/android_packages_modules_Bluetooth" groups="pdk" remote="github" />
