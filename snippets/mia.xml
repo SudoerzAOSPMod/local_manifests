@@ -54,6 +54,7 @@
   <project path="frameworks/av" name="Project-Mia/android_frameworks_av" groups="pdk" remote="github" />
   <project path="frameworks/base" name="Project-Mia/android_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="github" />
   <project path="frameworks/native" name="Project-Mia/android_frameworks_native" groups="pdk" remote="github" />
+  <project path="frameworks/opt/telephony" name="Project-Mia/android_frameworks_opt_telephony" groups="pdk" remote="github" />
 
   <!-- hardware -->
   <project path="hardware/interfaces" name="Project-Mia/android_hardware_interfaces" groups="pdk" remote="github" />
