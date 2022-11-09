@@ -18,6 +18,7 @@
   <remove-project name="platform/frameworks/native" />
 
   <!-- hardware -->
+  <remove-project name="platform/hardware/interfaces" />
   <remove-project name="platform/hardware/libhardware" />
 
   <!-- packages -->
@@ -35,5 +36,7 @@
   <remove-project name="platform/system/core" />
   <remove-project name="platform/system/media" />
   <remove-project name="platform/system/memory/lmkd" />
+  <remove-project name="platform/system/security" />
   <remove-project name="platform/system/sepolicy" />
+  <remove-project name="platform/system/vold" />
 </manifest>

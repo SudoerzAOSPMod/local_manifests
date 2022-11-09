@@ -56,6 +56,7 @@
   <project path="frameworks/native" name="Project-Mia/android_frameworks_native" groups="pdk" remote="github" />
 
   <!-- hardware -->
+  <project path="hardware/interfaces" name="Project-Mia/android_hardware_interfaces" groups="pdk" remote="github" />
   <project path="hardware/libhardware" name="Project-Mia/android_hardware_libhardware" groups="pdk" remote="github" />
   <project path="hardware/mia/compat" name="Project-Mia/android_hardware_mia_compat" remote="github" />
   <project path="hardware/mia/interfaces" name="Project-Mia/android_hardware_mia_interfaces" remote="github" />
@@ -93,7 +94,9 @@
   <project path="system/core" name="Project-Mia/android_system_core" groups="pdk" remote="github" />
   <project path="system/media" name="Project-Mia/android_system_media" groups="pdk" remote="github" />
   <project path="system/memory/lmkd" name="Project-Mia/android_system_memory_lmkd" groups="pdk" remote="github" />
+  <project path="system/security" name="Project-Mia/android_system_security" groups="pdk" remote="github" />
   <project path="system/sepolicy" name="Project-Mia/android_system_sepolicy" groups="pdk" remote="github" />
+  <project path="system/vold" name="Project-Mia/android_system_vold" groups="pdk" remote="github" />
 
   <!-- tools -->
   <project path="tools/extract-utils" name="Project-Mia/android_tools_extract-utils" remote="github" />
