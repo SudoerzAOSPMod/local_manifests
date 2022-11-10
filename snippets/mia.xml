@@ -85,6 +85,7 @@
   <project path="packages/apps/ThemePicker" name="Project-Mia/android_packages_apps_ThemePicker" groups="pdk-fs" remote="github" />
   <project path="packages/apps/WallpaperPicker2" name="Project-Mia/android_packages_apps_WallpaperPicker2" groups="pdk-fs" remote="github" />
   <project path="packages/modules/Bluetooth" name="Project-Mia/android_packages_modules_Bluetooth" groups="pdk" remote="github" />
+  <project path="packages/modules/Wifi" name="Project-Mia/android_packages_modules_Wifi" groups="pdk-cw-fs,pdk-fs" remote="github" />
   <project path="packages/resources/devicesettings" name="Project-Mia/android_packages_resources_devicesettings" remote="github" />
 
   <!-- prebuilts -->
