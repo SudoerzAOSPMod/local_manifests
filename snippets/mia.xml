@@ -78,6 +78,7 @@
   <project path="hardware/qcom-caf/wlan" name="Project-Mia/android_hardware_qcom_wlan" groups="qcom,waipio-vendor" remote="github" revision="takina-caf" />
 
   <!-- packages -->
+  <project path="packages/apps/Aperture" name="Project-Mia/android_packages_apps_Aperture" remote="github" />
   <project path="packages/apps/EmergencyInfo" name="Project-Mia/android_packages_apps_EmergencyInfo" groups="pdk-fs" remote="github" />
   <project path="packages/apps/Launcher3" name="Project-Mia/android_packages_apps_Launcher3" groups="pdk-fs" remote="github" />
   <project path="packages/apps/Music" name="Project-Mia/android_packages_apps_Music" groups="pdk-fs" remote="github" />
