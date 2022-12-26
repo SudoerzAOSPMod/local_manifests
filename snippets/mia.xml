@@ -90,6 +90,7 @@
 
   <!-- packages -->
   <project path="packages/apps/Aperture" name="Project-Mia/android_packages_apps_Aperture" remote="github" />
+  <project path="packages/apps/CarrierConfig" name="Project-Mia/android_packages_apps_CarrierConfig" groups="pdk-cw-fs,pdk-fs" remote="github" />
   <project path="packages/apps/EmergencyInfo" name="Project-Mia/android_packages_apps_EmergencyInfo" groups="pdk-fs" remote="github" />
   <project path="packages/apps/Launcher3" name="Project-Mia/android_packages_apps_Launcher3" groups="pdk-fs" remote="github" />
   <project path="packages/apps/Music" name="Project-Mia/android_packages_apps_Music" groups="pdk-fs" remote="github" />
@@ -98,6 +99,7 @@
   <project path="packages/apps/WallpaperPicker2" name="Project-Mia/android_packages_apps_WallpaperPicker2" groups="pdk-fs" remote="github" />
   <project path="packages/modules/Bluetooth" name="Project-Mia/android_packages_modules_Bluetooth" groups="pdk" remote="github" />
   <project path="packages/modules/Wifi" name="Project-Mia/android_packages_modules_Wifi" groups="pdk-cw-fs,pdk-fs" remote="github" />
+  <project path="packages/services/Telephony" name="Project-Mia/android_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="github" />
   <project path="packages/resources/devicesettings" name="Project-Mia/android_packages_resources_devicesettings" remote="github" />
 
   <!-- prebuilts -->
