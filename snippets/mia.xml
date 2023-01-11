@@ -69,6 +69,7 @@
   </project>
   <project path="hardware/qcom/sm8150/display" name="Project-Mia/android_hardware_qcom_sm8150_display" groups="qcom_sm8150" remote="github" />
   <project path="hardware/qcom/sm8150/media" name="Project-Mia/android_hardware_qcom_sm8150_media" groups="qcom_sm8150" remote="github" />
+  <project path="hardware/qcom/wlan" name="Project-Mia/android_hardware_qcom_wlan" groups="qcom_wlan,pdk-qcom" remote="github" revision="takina" />
   <project path="hardware/qcom-caf/bootctrl" name="Project-Mia/android_hardware_qcom_bootctrl" groups="qcom,waipio-vendor" remote="github" revision="takina-caf" />
   <project path="hardware/qcom-caf/common" name="Project-Mia/android_hardware_qcom-caf_common" groups="qcom" remote="github">
     <!-- add guard for AOSP hardware/qcom dir -->
