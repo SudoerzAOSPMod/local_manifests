@@ -1,19 +1,40 @@
-Project Mia
-===========
+# Welcome to Sudoerz's Mod[PRIVATE]
 
-Project Mia is a Mia Institute collaborative project.
+## Based on "Project Mia"
 
-Getting started
+
+# WARN:THIS IS A PRIVATE PROJECT
+# DO NOT SHARE ANY COMMIT TO PUBLIC WITHOUT AUTHORIZATION
+
+ Getting Started
 ---------------
+To get started with the Sudoerz's Mod sources, you'll need to get
+familiar with [Git and Repo](https://source.android.com/setup/build/downloading).
 
-To get started with Project Mia, you'll need to get familiar with [Source Control Tools](https://source.android.com/setup/develop).
+To initialize your local repository, use command:
 
-To initialize your local repository, use this command:
 ```bash
-repo init --no-clone-bundle -u ssh://git@github.com/Project-Mia/android_manifest.git -b takina
+repo init --no-clone-bundle -u https://github.com/SudoerzAOSPMod/local_manifests -b 12.1
 ```
 
-Then to sync up:
+Then sync up:
+
 ```bash
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags --optimized-fetch --prune
+```
+
+Building the System
+-------------------
+ Initialize the ROM environment with the envsetup.sh script.
+
+```bash
+source build/envsetup.sh
+```
+Lunch your device after cloning all device sources if needed.
+```bash
+lunch xxx
+```
+Start compilation
+```bash
+mka bacon
 ```

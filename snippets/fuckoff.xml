@@ -53,6 +53,29 @@
   <remove-project name="device/ti/beagle-x15" />
   <remove-project name="device/ti/beagle-x15-kernel" />
 
+  <!-- kernel -->
+  <remove-project name="kernel/configs" />
+  <remove-project name="kernel/prebuilts/4.19/arm64" />
+  <remove-project name="kernel/prebuilts/5.4/arm64" />
+  <remove-project name="kernel/prebuilts/5.4/x86-64" />
+  <remove-project name="kernel/prebuilts/5.10/arm64" />
+  <remove-project name="kernel/prebuilts/5.10/x86-64" />
+  <remove-project name="kernel/prebuilts/5.15/arm64" />
+  <remove-project name="kernel/prebuilts/5.15/x86-64" />
+  <remove-project name="kernel/prebuilts/mainline/arm64" />
+  <remove-project name="kernel/prebuilts/mainline/x86-64" />
+  <remove-project name="kernel/prebuilts/common-modules/virtual-device/4.19/arm64" />
+  <remove-project name="kernel/prebuilts/common-modules/virtual-device/4.19/x86-64" />
+  <remove-project name="kernel/prebuilts/common-modules/virtual-device/5.10/arm64" />
+  <remove-project name="kernel/prebuilts/common-modules/virtual-device/5.10/x86-64" />
+  <remove-project name="kernel/prebuilts/common-modules/virtual-device/5.15/arm64" />
+  <remove-project name="kernel/prebuilts/common-modules/virtual-device/5.15/x86-64" />
+  <remove-project name="kernel/prebuilts/common-modules/virtual-device/5.4/arm64" />
+  <remove-project name="kernel/prebuilts/common-modules/virtual-device/5.4/x86-64" />
+  <remove-project name="kernel/prebuilts/common-modules/virtual-device/mainline/arm64" />
+  <remove-project name="kernel/prebuilts/common-modules/virtual-device/mainline/x86-64" />
+  <remove-project name="kernel/tests" />
+
   <!-- external -->
   <remove-project name="platform/external/e2fsprogs" />
   <remove-project name="platform/external/gptfdisk" />

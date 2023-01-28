@@ -1184,6 +1184,7 @@
   <project path="tools/trebuchet" name="platform/tools/trebuchet" groups="tools,cts,pdk,pdk-cw-fs,pdk-fs" />
   <!-- END open-source projects -->
 
-  <include name="snippets/rm.xml" />
+  <include name="snippets/fuckoff.xml" />
   <include name="snippets/mia.xml" />
+  <!--<include name="snippets/sudoerz.xml" />-->
 </manifest>
