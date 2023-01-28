@@ -2,7 +2,7 @@
 <manifest>
 
   <remote  name="github"
-           fetch=".."
+           fetch="ssh://git@github.com/"
            review="https://review.project-mia.org/"
            revision="refs/heads/takina" />
 
