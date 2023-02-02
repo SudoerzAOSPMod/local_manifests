@@ -130,7 +130,8 @@
   <project path="vendor/nxp/secure_element" name="Project-Mia/android_vendor_nxp_secure_element" groups="nxp" remote="github" />
   <project path="vendor/nxp/secure_element_extns" name="Project-Mia/android_vendor_nxp_secure_element_extns" groups="nxp" remote="github" />
   <project path="vendor/qcom/opensource/audio" name="Project-Mia/android_vendor_qcom_opensource_audio" groups="qcom,qssi" remote="github" />
-  <project path="vendor/qcom/opensource/audio-hal/st-hal" name="Project-Mia/android_vendor_qcom_opensource_audio-hal_st-hal" groups="qcom,lahaina" remote="github" />
+  <project path="vendor/qcom/opensource/audio-hal/st-hal" name="Project-Mia/android_vendor_qcom_opensource_audio-hal_st-hal" groups="qcom,waipio-vendor" remote="github" />
+  <project path="vendor/qcom/opensource/audio-hal/st-hal-legacy-um" name="Project-Mia/android_vendor_qcom_opensource_audio-hal_st-hal" groups="qcom,lahaina" remote="github" revision="takina-legacy-um" />
   <project path="vendor/qcom/opensource/commonsys/display" name="Project-Mia/android_vendor_qcom_opensource_display-commonsys" groups="qcom,qssi" remote="github" />
   <project path="vendor/qcom/opensource/commonsys-intf/display" name="Project-Mia/android_vendor_qcom_opensource_display-commonsys-intf" groups="qcom,qssi" remote="github" />
   <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="Project-Mia/android_vendor_qcom_opensource_data-ipa-cfg-mgr" groups="qcom,waipio-vendor" remote="github" />
