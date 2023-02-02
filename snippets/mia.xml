@@ -136,6 +136,7 @@
   <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="Project-Mia/android_vendor_qcom_opensource_data-ipa-cfg-mgr" groups="qcom,waipio-vendor" remote="github" />
   <project path="vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um" name="Project-Mia/android_vendor_qcom_opensource_data-ipa-cfg-mgr" groups="qcom,lahaina" remote="github" revision="takina-legacy-um" />
   <project path="vendor/qcom/opensource/dataservices" name="Project-Mia/android_vendor_qcom_opensource_dataservices" groups="qcom,waipio-vendor" remote="github" />
+  <project path="vendor/qcom/opensource/healthd-ext" name="Project-Mia/android_vendor_qcom_opensource_healthd-ext" groups="qcom,waipio-vendor" remote="github" />
   <project path="vendor/qcom/opensource/interfaces" name="Project-Mia/android_vendor_qcom_opensource_interfaces" groups="qcom,qssi" remote="github" />
   <project path="vendor/qcom/opensource/power" name="Project-Mia/android_vendor_qcom_opensource_power" groups="qcom,waipio-vendor" remote="github" />
   <project path="vendor/qcom/opensource/thermal-engine" name="Project-Mia/android_vendor_qcom_opensource_thermal-engine" groups="qcom,waipio-vendor" remote="github" />
