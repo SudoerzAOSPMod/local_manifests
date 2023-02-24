@@ -182,7 +182,7 @@
   <project path="external/eigen" name="platform/external/eigen" groups="pdk" />
   <project path="external/elfutils" name="platform/external/elfutils" groups="pdk" />
   <project path="external/emma" name="platform/external/emma" groups="pdk" />
-  <project path="external/erofs-utils" name="platform/external/erofs-utils" groups="pdk" />
+  <project path="external/erofs-utils" name="platform/external/erofs-utils" groups="pdk" revision="f3669fe94b327235b033c2b6a88a6a28d586cff8" />
   <project path="external/error_prone" name="platform/external/error_prone" groups="pdk" />
   <project path="external/escapevelocity" name="platform/external/escapevelocity" groups="pdk" />
   <project path="external/ethtool" name="platform/external/ethtool" groups="pdk" />
