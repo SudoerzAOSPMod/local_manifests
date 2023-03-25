@@ -62,6 +62,7 @@
   <project path="hardware/libhardware" name="Project-Mia/android_hardware_libhardware" groups="pdk" remote="github" />
   <project path="hardware/mia/compat" name="Project-Mia/android_hardware_mia_compat" remote="github" />
   <project path="hardware/mia/interfaces" name="Project-Mia/android_hardware_mia_interfaces" remote="github" />
+  <project path="hardware/qcom/audio" name="Project-Mia/android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk-qcom" remote="github" />
   <project path="hardware/qcom/sdm845/display" name="Project-Mia/android_hardware_qcom_sdm845_display" groups="generic_fs,qcom_sdm845" remote="github" />
   <project path="hardware/qcom/sdm845/media" name="Project-Mia/android_hardware_qcom_sdm845_media" groups="generic_fs,qcom_sdm845" remote="github" />
   <project path="hardware/qcom/sm8150/data/ipacfg-mgr" name="Project-Mia/android_hardware_qcom_sm8150_data_ipacfg-mgr" groups="qcom_sm8150" remote="github" >
@@ -119,6 +120,7 @@
   <project path="system/memory/lmkd" name="Project-Mia/android_system_memory_lmkd" groups="pdk" remote="github" />
   <project path="system/security" name="Project-Mia/android_system_security" groups="pdk" remote="github" />
   <project path="system/sepolicy" name="Project-Mia/android_system_sepolicy" groups="pdk" remote="github" />
+  <project path="system/update_engine" name="Project-Mia/android_system_update_engine" groups="pdk" remote="github" />
   <project path="system/vold" name="Project-Mia/android_system_vold" groups="pdk" remote="github" />
 
   <!-- tools -->
