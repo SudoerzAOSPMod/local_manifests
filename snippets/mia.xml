@@ -17,27 +17,6 @@
   <project path="bionic" name="Project-Mia/android_bionic" groups="pdk" remote="github" />
   <project path="manifest" name="Project-Mia/android_manifest" remote="github" />
 
-  <!-- build -->
-  <project path="build/make" name="Project-Mia/android_build" groups="pdk" remote="github">
-    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
-    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
-    <linkfile src="core" dest="build/core" />
-    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
-    <linkfile src="target" dest="build/target" />
-    <linkfile src="tools" dest="build/tools" />
-  </project>
-  <project path="build/soong" name="Project-Mia/android_build_soong" groups="pdk,tradefed" remote="github">
-    <linkfile src="root.bp" dest="Android.bp" />
-    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
-  </project>
-
-  <!-- device -->
-  <project path="device/mia/sepolicy" name="Project-Mia/android_device_mia_sepolicy" remote="github" />
-  <project path="device/qcom/sepolicy" name="Project-Mia/android_device_qcom_sepolicy" groups="qcom,qssi" remote="github" />
-  <project path="device/qcom/sepolicy-legacy-um" name="Project-Mia/android_device_qcom_sepolicy" groups="qcom,sdm660" remote="github" revision="takina-legacy-um" />
-  <project path="device/qcom/sepolicy_vndr" name="Project-Mia/android_device_qcom_sepolicy_vndr" groups="qcom,waipio-vendor" remote="github" />
-  <project path="device/qcom/sepolicy_vndr-legacy-um" name="Project-Mia/android_device_qcom_sepolicy_vndr" groups="qcom,lahaina" remote="github" revision="takina-legacy-um" />
-
   <!-- external -->
   <project path="external/ant-wireless/ant_client" name="Project-Mia/android_external_ant-wireless_ant_client" groups="qcom,sdm845" remote="github" />
   <project path="external/ant-wireless/ant_native" name="Project-Mia/android_external_ant-wireless_ant_native" groups="qcom,sdm845" remote="github" />
@@ -53,7 +32,6 @@
 
   <!-- frameworks -->
   <project path="frameworks/av" name="Project-Mia/android_frameworks_av" groups="pdk" remote="github" />
-  <project path="frameworks/base" name="Project-Mia/android_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="github" />
   <project path="frameworks/native" name="Project-Mia/android_frameworks_native" groups="pdk" remote="github" />
   <project path="frameworks/opt/telephony" name="Project-Mia/android_frameworks_opt_telephony" groups="pdk" remote="github" />
 
@@ -97,7 +75,6 @@
   <project path="packages/apps/EmergencyInfo" name="Project-Mia/android_packages_apps_EmergencyInfo" groups="pdk-fs" remote="github" />
   <project path="packages/apps/Launcher3" name="Project-Mia/android_packages_apps_Launcher3" groups="pdk-fs" remote="github" />
   <project path="packages/apps/Music" name="Project-Mia/android_packages_apps_Music" groups="pdk-fs" remote="github" />
-  <project path="packages/apps/Settings" name="Project-Mia/android_packages_apps_Settings" groups="pdk-fs" remote="github" />
   <project path="packages/apps/SimpleDeviceConfig" name="Project-Mia/android_packages_apps_SimpleDeviceConfig" remote="github" />
   <project path="packages/apps/ThemePicker" name="Project-Mia/android_packages_apps_ThemePicker" groups="pdk-fs" remote="github" />
   <project path="packages/apps/WallpaperPicker2" name="Project-Mia/android_packages_apps_WallpaperPicker2" groups="pdk-fs" remote="github" />
@@ -128,8 +105,6 @@
 
   <!-- vendor -->
   <project path="vendor/codeaurora/telephony" name="Project-Mia/android_vendor_codeaurora_telephony" groups="qcom,qssi" remote="github" />
-  <project path="vendor/gms" name="Hello-Hanami-Yuuri/android_vendor_gms" remote="gitlab" clone-depth="1" />
-  <project path="vendor/mia" name="Project-Mia/android_vendor_mia" remote="github" />
   <project path="vendor/nxp/nfc" name="Project-Mia/android_vendor_nxp_nfc" groups="nxp" remote="github" />
   <project path="vendor/nxp/opensource/interfaces/nfc" name="Project-Mia/android_vendor_nxp_interfaces_opensource_nfc" groups="qcom,qssi" remote="github" />
   <project path="vendor/nxp/secure_element" name="Project-Mia/android_vendor_nxp_secure_element" groups="nxp" remote="github" />
@@ -149,5 +124,4 @@
   <project path="vendor/qcom/opensource/usb" name="Project-Mia/android_vendor_qcom_opensource_usb" groups="qcom,waipio-vendor" remote="github" />
   <project path="vendor/qcom/opensource/vibrator" name="Project-Mia/android_vendor_qcom_opensource_vibrator" groups="qcom,waipio-vendor" remote="github" />
   <project path="vendor/qcom/opensource/wfd-commonsys" name="Project-Mia/android_vendor_qcom_opensource_wfd-commonsys" groups="qcom,waipio-video" remote="github" />
-  <project path="vendor/support" name="Project-Mia/android_vendor_support" remote="github" />
 </manifest>
