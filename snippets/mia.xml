@@ -17,6 +17,8 @@
   <project path="bionic" name="Project-Mia/android_bionic" groups="pdk" remote="github" />
   <project path="manifest" name="Project-Mia/android_manifest" remote="github" />
 
+  <project path="device/qcom/sepolicy" name="Project-Mia/android_device_qcom_sepolicy" groups="qcom,qssi" remote="github" />
+
   <!-- external -->
   <project path="external/ant-wireless/ant_client" name="Project-Mia/android_external_ant-wireless_ant_client" groups="qcom,sdm845" remote="github" />
   <project path="external/ant-wireless/ant_native" name="Project-Mia/android_external_ant-wireless_ant_native" groups="qcom,sdm845" remote="github" />
