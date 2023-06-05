@@ -75,7 +75,6 @@
   <project path="packages/apps/Aperture" name="Project-Mia/android_packages_apps_Aperture" remote="github" />
   <project path="packages/apps/CarrierConfig" name="Project-Mia/android_packages_apps_CarrierConfig" groups="pdk-cw-fs,pdk-fs" remote="github" />
   <project path="packages/apps/EmergencyInfo" name="Project-Mia/android_packages_apps_EmergencyInfo" groups="pdk-fs" remote="github" />
-  <project path="packages/apps/Launcher3" name="Project-Mia/android_packages_apps_Launcher3" groups="pdk-fs" remote="github" />
   <project path="packages/apps/Music" name="Project-Mia/android_packages_apps_Music" groups="pdk-fs" remote="github" />
   <project path="packages/apps/SimpleDeviceConfig" name="Project-Mia/android_packages_apps_SimpleDeviceConfig" remote="github" />
   <project path="packages/apps/ThemePicker" name="Project-Mia/android_packages_apps_ThemePicker" groups="pdk-fs" remote="github" />
