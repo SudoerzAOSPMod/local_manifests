@@ -55,6 +55,7 @@
   <project path="packages/apps/FGWorkMode" name="packages_apps_FGWorkMode" remote="sudoerz-priv" />
   <project path="packages/apps/SigmaService" name="packages_apps_SigmaService" remote="sudoerz-personal" />
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="sudoerz-priv" />
+  <project path="packages/apps/ParanoidSense" name="packages_apps_ParanoidSense" remote="sudoerz-priv" />
 
   <!-- vendor repos -->
   <project path="vendor/sudoerz" name="vendor_sudoerz" remote="sudoerz-priv" />
