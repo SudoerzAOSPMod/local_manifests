@@ -15,7 +15,6 @@
            revision="refs/heads/takina" />
 
   <project path="bionic" name="Project-Mia/android_bionic" groups="pdk" remote="github" />
-  <project path="manifest" name="Project-Mia/android_manifest" remote="github" />
 
   <project path="device/qcom/sepolicy" name="Project-Mia/android_device_qcom_sepolicy" groups="qcom,qssi" remote="github" />
 
