@@ -5,15 +5,7 @@
            fetch="ssh://git@github.com/SudoerzAOSPMod"
            revision="refs/heads/13" />
 
-  <remote  name="sudoerz_legacy"
-           fetch="ssh://git@github.com/SudoerzAOSPMod"
-           revision="refs/heads/13" />
-
-  <remote  name="sudoerz-priv"
-           fetch="ssh://git@github.com/SudoerzAOSPMod"
-           revision="refs/heads/13" />
-
-  <remote  name="sudoerz-priv_legacy"
+  <remote  name="sudoerz_naosp"
            fetch="ssh://git@github.com/SudoerzAOSPMod"
            revision="refs/heads/13" />
   
@@ -37,31 +29,31 @@
   </project>
 
   <!-- device repos -->
-  <project path="device/sudoerz/sepolicy" name="device_sudoerz_sepolicy" remote="sudoerz-priv" />
-  <project path="device/qcom/sepolicy_vndr-legacy-um" name="device_qcom_sepolicy_vndr-legacy-um" remote="sudoerz" />
+  <project path="device/sudoerz/sepolicy" name="device_sudoerz_sepolicy" remote="sudoerz_naosp" />
+  <project path="device/qcom/sepolicy_vndr-legacy-um" name="device_qcom_sepolicy_vndr-legacy-um" remote="sudoerz_naosp" />
 
-  <project path="manifest" name="local_manifests" remote="sudoerz" />
+  <project path="manifest" name="local_manifests" remote="sudoerz_naosp" />
 
   <!-- hardware repos -->
-  <project path="hardware/sudoerz" name="hardware_sudoerz" remote="sudoerz_legacy" />
-  <project path="hardware/xiaomi" name="hardware_xiaomi" remote="sudoerz_legacy" />
+  <project path="hardware/sudoerz" name="hardware_sudoerz" remote="sudoerz_naosp" />
+  <project path="hardware/xiaomi" name="hardware_xiaomi" remote="sudoerz_naosp" />
   <!--<project path="hardware/qcom-caf/sm8250/audio" name="hardware_qcom-caf_sm8250_audio" groups="qcom,qcom_audio" remote="sudoerz" revision="12.0-caf-sm8250" />-->
   <!--<project path="hardware/qcom-caf/sm8250/display" name="hardware_qcom-caf_sm8250_display" groups="pdk,qcom,qcom_display" remote="sudoerz" revision="12.0-caf-sm8250" />-->
   <!--<project path="hardware/qcom-caf/sm8250/media" name="hardware_qcom-caf_sm8250_media" groups="qcom" remote="sudoerz" revision="12.0-caf-sm8250" />-->
 
   <!-- framework repos -->
-  <project path="frameworks/base" name="frameworks_base" remote="sudoerz-priv" />
+  <project path="frameworks/base" name="frameworks_base" remote="sudoerz" />
 
   <!-- packages repos -->
-  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="sudoerz-priv" />
-  <project path="packages/apps/FGWorkMode" name="packages_apps_FGWorkMode" remote="sudoerz-priv" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="sudoerz" />
+  <project path="packages/apps/FGWorkMode" name="packages_apps_FGWorkMode" remote="sudoerz_naosp" />
   <project path="packages/apps/SigmaService" name="packages_apps_SigmaService" remote="sudoerz-personal" />
-  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="sudoerz-priv" />
-  <project path="packages/apps/ParanoidSense" name="packages_apps_ParanoidSense" remote="sudoerz-priv" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="sudoerz" />
+  <project path="packages/apps/ParanoidSense" name="packages_apps_ParanoidSense" remote="sudoerz_naosp" />
 
   <!-- vendor repos -->
-  <project path="vendor/sudoerz" name="vendor_sudoerz" remote="sudoerz-priv" />
-  <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="sudoerz" />
-  <project path="vendor/support" name="vendor_support" remote="sudoerz" />
+  <project path="vendor/sudoerz" name="vendor_sudoerz" remote="sudoerz_naosp" />
+  <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="sudoerz_naosp" />
+  <project path="vendor/support" name="vendor_support" remote="sudoerz_naosp" />
 
 </manifest>
