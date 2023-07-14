@@ -40,7 +40,7 @@
   <project path="device/sudoerz/sepolicy" name="device_sudoerz_sepolicy" remote="sudoerz-priv" />
   <project path="device/qcom/sepolicy_vndr-legacy-um" name="device_qcom_sepolicy_vndr-legacy-um" remote="sudoerz" />
 
-  <project path="manifest" name="SudoerzAOSPMod/local_manifests" remote="sudoerz" />
+  <project path="manifest" name="local_manifests" remote="sudoerz" />
 
   <!-- hardware repos -->
   <project path="hardware/sudoerz" name="hardware_sudoerz" remote="sudoerz_legacy" />
