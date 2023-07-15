@@ -1190,6 +1190,5 @@
   <!-- END open-source projects -->
 
   <include name="snippets/fuckoff.xml" />
-  <include name="snippets/mia.xml" />
   <include name="snippets/sudoerz.xml" />
 </manifest>

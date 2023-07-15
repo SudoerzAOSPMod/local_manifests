@@ -1,8 +1,5 @@
 # Welcome to Sudoerz's Mod[PRIVATE]
 
-Based on [Project Mia](https://github.com/Project-Mia) (also a private project)
-
-
 # WARN:THIS IS A PRIVATE PROJECT
 DO NOT SHARE ANY COMMIT TO PUBLIC WITHOUT AUTHORIZATION
 

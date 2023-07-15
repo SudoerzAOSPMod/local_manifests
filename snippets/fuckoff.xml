@@ -53,12 +53,6 @@
   <remove-project name="device/ti/beagle-x15" />
   <remove-project name="device/ti/beagle-x15-kernel" />
 
-  <!-- external -->
-  <remove-project name="platform/external/e2fsprogs" />
-  <remove-project name="platform/external/gptfdisk" />
-  <remove-project name="platform/external/mksh" />
-  <remove-project name="platform/external/tinycompress" />
-
   <!-- frameworks -->
   <remove-project name="platform/frameworks/av" />
   <remove-project name="platform/frameworks/base" />
@@ -79,12 +73,9 @@
   <!-- packages -->
   <remove-project name="platform/packages/apps/Browser2" />
   <remove-project name="platform/packages/apps/CarrierConfig" />
-  <remove-project name="platform/packages/apps/EmergencyInfo" />
   <remove-project name="platform/packages/apps/Music" />
   <remove-project name="platform/packages/apps/QuickSearchBox" />
   <remove-project name="platform/packages/apps/Settings" />
-  <remove-project name="platform/packages/apps/ThemePicker" />
-  <remove-project name="platform/packages/apps/WallpaperPicker2" />
   <remove-project name="platform/packages/modules/Bluetooth" />
   <remove-project name="platform/packages/modules/Wifi" />
   <remove-project name="platform/packages/services/Telephony" />

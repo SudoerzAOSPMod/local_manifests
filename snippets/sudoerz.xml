@@ -13,6 +13,16 @@
            fetch="ssh://git@github.com/UP5468-GE-ES44AC"
            revision="refs/heads/13" />
 
+  <remote  name="github"
+           fetch="ssh://git@github.com/"
+           revision="refs/heads/lineage-20.0" />
+
+  <remote name="pixel"
+          fetch="https://github.com/PixelExperience"
+          revision="thirteen" />
+
+  <project path="bionic" name="bionic" groups="pdk" remote="sudoerz" />
+
   <!-- build -->
   <project path="build/make" name="build" groups="pdk" remote="sudoerz">
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
@@ -28,32 +38,106 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
 
+  <!-- external -->
+  <project path="external/ant-wireless/ant_client" name="LineageOS/android_external_ant-wireless_ant_client" groups="qcom,sdm845" remote="github" />
+  <project path="external/ant-wireless/ant_native" name="LineageOS/android_external_ant-wireless_ant_native" groups="qcom,sdm845" remote="github" />
+  <project path="external/ant-wireless/ant_service" name="LineageOS/android_external_ant-wireless_ant_service" groups="qcom,sdm845" remote="github" />
+  <project path="external/ant-wireless/hidl" name="LineageOS/android_external_ant-wireless_hidl" groups="qcom,qssi" remote="github" />
+  <project path="external/json-c" name="LineageOS/android_external_json-c" remote="github" groups="qcom,qssi" />
+  <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" remote="aosp" revision="refs/tags/android-11.0.0_r46" />
+  <project path="external/dwarves" name="platform/external/dwarves" remote="aosp" revision="3c8f7e8b2cf7ff902b71c42d00fda30f30114b07" />
+
   <!-- device repos -->
   <project path="device/sudoerz/sepolicy" name="device_sudoerz_sepolicy" remote="sudoerz_naosp" />
+  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" groups="qcom,qssi" remote="sudoerz_naosp" />
   <project path="device/qcom/sepolicy_vndr-legacy-um" name="device_qcom_sepolicy_vndr-legacy-um" remote="sudoerz_naosp" />
 
   <project path="manifest" name="local_manifests" remote="sudoerz_naosp" />
 
   <!-- hardware repos -->
+  <project path="hardware/interfaces" name="hardware_interfaces" groups="pdk" remote="sudoerz" />
+  <project path="hardware/libhardware" name="hardware_libhardware" groups="pdk" remote="sudoerz" />
   <project path="hardware/sudoerz" name="hardware_sudoerz" remote="sudoerz_naosp" />
   <project path="hardware/xiaomi" name="hardware_xiaomi" remote="sudoerz_naosp" />
-  <!--<project path="hardware/qcom-caf/sm8250/audio" name="hardware_qcom-caf_sm8250_audio" groups="qcom,qcom_audio" remote="sudoerz" revision="12.0-caf-sm8250" />-->
-  <!--<project path="hardware/qcom-caf/sm8250/display" name="hardware_qcom-caf_sm8250_display" groups="pdk,qcom,qcom_display" remote="sudoerz" revision="12.0-caf-sm8250" />-->
-  <!--<project path="hardware/qcom-caf/sm8250/media" name="hardware_qcom-caf_sm8250_media" groups="qcom" remote="sudoerz" revision="12.0-caf-sm8250" />-->
+  <project path="hardware/qcom-caf/bootctrl" name="LineageOS/android_hardware_qcom_bootctrl" groups="qcom,waipio-vendor" remote="github" revision="lineage-20.0-caf" />
+  <project path="hardware/qcom-caf/common" name="LineageOS/android_hardware_qcom-caf_common" groups="qcom" remote="github" >
+    <!-- add guard for AOSP hardware/qcom dir -->
+    <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
+    <!-- add guards for CAF repositories -->
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8250/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8250/Android.mk" />
+  </project>
+  <project path="hardware/qcom-caf/bt" name="LineageOS/android_hardware_qcom_bt" groups="qcom,legacy-qcom" remote="github" revision="lineage-20.0-caf" />
+  <project path="hardware/qcom-caf/sm8250/audio" name="LineageOS/android_hardware_qcom_audio" groups="qcom,kona" remote="github" revision="lineage-20.0-caf-sm8250" />
+  <project path="hardware/qcom-caf/sm8250/display" name="LineageOS/android_hardware_qcom_display" groups="qcom" remote="github" revision="lineage-20.0-caf-sm8250" />
+  <project path="hardware/qcom-caf/sm8250/media" name="LineageOS/android_hardware_qcom_media" groups="qcom,kona" remote="github" revision="lineage-20.0-caf-sm8250" />
+  <project path="hardware/qcom-caf/thermal" name="LineageOS/android_hardware_qcom_thermal" remote="github" groups="qcom,waipio-vendor" />
+  <project path="hardware/qcom-caf/wlan" name="LineageOS/android_hardware_qcom_wlan" groups="qcom,waipio-vendor" remote="github" revision="lineage-20.0-caf" />
 
   <!-- framework repos -->
+  <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="sudoerz" />
   <project path="frameworks/base" name="frameworks_base" remote="sudoerz" />
+  <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="sudoerz" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" groups="pdk" remote="sudoerz" />
 
   <!-- packages repos -->
+  <project path="packages/apps/Aperture" name="LineageOS/android_packages_apps_Aperture" remote="github" />
+  <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" groups="pdk" remote="sudoerz" />
+  <project path="packages/modules/Wifi" name="packages_modules_Wifi" groups="pdk-cw-fs,pdk-fs" remote="sudoerz" />
+  <project path="packages/apps/CarrierConfig" name="packages_apps_CarrierConfig" groups="pdk-cw-fs,pdk-fs" remote="sudoerz" />
+  <project path="packages/apps/SimpleDeviceConfig" name="packages_apps_SimpleDeviceConfig" remote="pixel" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="sudoerz" />
   <project path="packages/apps/FGWorkMode" name="packages_apps_FGWorkMode" remote="sudoerz_naosp" />
   <project path="packages/apps/SigmaService" name="packages_apps_SigmaService" remote="sudoerz-personal" />
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="sudoerz" />
   <project path="packages/apps/ParanoidSense" name="packages_apps_ParanoidSense" remote="sudoerz_naosp" />
+  <project path="packages/services/Telephony" name="packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="sudoerz" />
+  <project path="packages/resources/devicesettings" name="packages_resources_devicesettings" remote="sudoerz_naosp" />
+
+  <!-- prebuilts -->
+  <project path="prebuilts/extract-tools" name="LineageOS/android_prebuilts_extract-tools" remote="github" clone-depth="1" />
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="LineageOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" groups="pdk,linux,arm" revision="lineage-19.1" remote="github" clone-depth="1" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="LineageOS/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" groups="pdk,linux,arm" remote="github" revision="lineage-19.1" clone-depth="1" />
+
+  <!-- system -->
+  <project path="system/core" name="system_core" groups="pdk" remote="sudoerz" />
+  <project path="system/libhidl" name="system_libhidl" groups="pdk" remote="sudoerz" />
+  <project path="system/media" name="system_media" groups="pdk" remote="sudoerz" />
+  <project path="system/memory/lmkd" name="system_memory_lmkd" groups="pdk" remote="sudoerz" />
+  <project path="system/security" name="system_security" groups="pdk" remote="sudoerz" />
+  <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="sudoerz" />
+  <project path="system/update_engine" name="system_update_engine" groups="pdk" remote="sudoerz" />
+  <project path="system/vold" name="system_vold" groups="pdk" remote="sudoerz" />
+
+  <!-- tools -->
+  <project path="tools/extract-utils" name="LineageOS/android_tools_extract-utils" remote="github" />
+  <project path="prebuilts/tools-mia" name="LineageOS/android_prebuilts_tools-lineage" remote="github" />
+  <project path="prebuilts/kernel-build-tools" name="kernel/prebuilts/build-tools" remote="aosp" clone-depth="1" revision="refs/tags/android-13.0.0_r0.15" />
 
   <!-- vendor repos -->
   <project path="vendor/sudoerz" name="vendor_sudoerz" remote="sudoerz_naosp" />
   <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="sudoerz_naosp" />
   <project path="vendor/support" name="vendor_support" remote="sudoerz_naosp" />
+
+  <!-- vendor -->
+  <project path="vendor/codeaurora/telephony" name="LineageOS/android_vendor_codeaurora_telephony" groups="qcom,qssi" remote="github" />
+  <project path="vendor/nxp/nfc" name="LineageOS/android_vendor_nxp_nfc" groups="nxp" remote="github" />
+  <project path="vendor/nxp/opensource/interfaces/nfc" name="LineageOS/android_vendor_nxp_interfaces_opensource_nfc" groups="qcom,qssi" remote="github" />
+  <project path="vendor/nxp/secure_element" name="LineageOS/android_vendor_nxp_secure_element" groups="nxp" remote="github" />
+  <project path="vendor/nxp/secure_element_extns" name="LineageOS/android_vendor_nxp_secure_element_extns" groups="nxp" remote="github" />
+  <project path="vendor/qcom/opensource/audio" name="LineageOS/android_vendor_qcom_opensource_audio" groups="qcom,qssi" remote="github" />
+  <project path="vendor/qcom/opensource/audio-hal/st-hal" name="LineageOS/android_vendor_qcom_opensource_audio-hal_st-hal" groups="qcom,waipio-vendor" remote="github" />
+  <project path="vendor/qcom/opensource/commonsys/display" name="LineageOS/android_vendor_qcom_opensource_display-commonsys" groups="qcom,qssi" remote="github" />
+  <project path="vendor/qcom/opensource/commonsys-intf/display" name="LineageOS/android_vendor_qcom_opensource_display-commonsys-intf" groups="qcom,qssi" remote="github" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="LineageOS/android_vendor_qcom_opensource_data-ipa-cfg-mgr" groups="qcom,waipio-vendor" remote="github" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um" name="LineageOS/android_vendor_qcom_opensource_data-ipa-cfg-mgr" groups="qcom,lahaina" remote="github" revision="lineage-20.0-legacy-um" />
+  <project path="vendor/qcom/opensource/dataservices" name="LineageOS/android_vendor_qcom_opensource_dataservices" groups="qcom,waipio-vendor" remote="github" />
+  <project path="vendor/qcom/opensource/healthd-ext" name="LineageOS/android_vendor_qcom_opensource_healthd-ext" groups="qcom,waipio-vendor" remote="github" />
+  <project path="vendor/qcom/opensource/interfaces" name="LineageOS/android_vendor_qcom_opensource_interfaces" groups="qcom,qssi" remote="github" />
+  <project path="vendor/qcom/opensource/power" name="LineageOS/android_vendor_qcom_opensource_power" groups="qcom,waipio-vendor" remote="github" />
+  <project path="vendor/qcom/opensource/thermal-engine" name="LineageOS/android_vendor_qcom_opensource_thermal-engine" groups="qcom,waipio-vendor" remote="github" />
+  <project path="vendor/qcom/opensource/usb" name="LineageOS/android_vendor_qcom_opensource_usb" groups="qcom,waipio-vendor" remote="github" />
+  <project path="vendor/qcom/opensource/vibrator" name="LineageOS/android_vendor_qcom_opensource_vibrator" groups="qcom,waipio-vendor" remote="github" />
+  <project path="vendor/qcom/opensource/wfd-commonsys" name="LineageOS/android_vendor_qcom_opensource_wfd-commonsys" groups="qcom,waipio-video" remote="github" />
 
 </manifest>
