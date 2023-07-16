@@ -56,6 +56,9 @@
   <remove-project name="device/ti/beagle-x15" />
   <remove-project name="device/ti/beagle-x15-kernel" />
 
+  <!-- external -->
+  <remove-project name="external/tinycompress" />
+
   <!-- frameworks -->
   <remove-project name="platform/frameworks/av" />
   <remove-project name="platform/frameworks/base" />
