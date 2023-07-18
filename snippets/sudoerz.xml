@@ -92,6 +92,7 @@
   <project path="packages/apps/SigmaService" name="packages_apps_SigmaService" remote="sudoerz-personal" />
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="sudoerz" />
   <project path="packages/apps/ParanoidSense" name="packages_apps_ParanoidSense" remote="sudoerz_naosp" />
+  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="sudoerz" />
   <project path="packages/services/Telephony" name="packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="sudoerz" />
   <project path="packages/resources/devicesettings" name="packages_resources_devicesettings" remote="sudoerz_naosp" />
 
