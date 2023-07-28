@@ -82,7 +82,7 @@
   <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" groups="pdk" remote="sudoerz" />
 
   <!-- packages repos -->
-  <project path="packages/apps/Aperture" name="LineageOS/android_packages_apps_Aperture" remote="github" />
+  <project path="packages/apps/Aperture" name="packages_apps_Aperture" remote="sudoerz_naosp" />
   <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" groups="pdk" remote="sudoerz" />
   <project path="packages/modules/Wifi" name="packages_modules_Wifi" groups="pdk-cw-fs,pdk-fs" remote="sudoerz" />
   <project path="packages/apps/CarrierConfig" name="packages_apps_CarrierConfig" groups="pdk-cw-fs,pdk-fs" remote="sudoerz" />
