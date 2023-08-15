@@ -41,6 +41,8 @@
   <project path="external/ant-wireless/ant_service" name="LineageOS/android_external_ant-wireless_ant_service" groups="qcom,sdm845" remote="github" />
   <project path="external/ant-wireless/hidl" name="LineageOS/android_external_ant-wireless_hidl" groups="qcom,qssi" remote="github" />
   <project path="external/json-c" name="LineageOS/android_external_json-c" remote="github" groups="qcom,qssi" />
+  <project path="external/mksh" name="LineageOS/android_external_mksh" groups="pdk" remote="github" />
+  <project path="external/gptfdisk" name="LineageOS/android_external_gptfdisk" groups="pdk" remote="github" />
   <project path="external/tinycompress" name="LineageOS/android_external_tinycompress" groups="pdk" remote="github"/>
   <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" remote="aosp" revision="refs/tags/android-11.0.0_r46" />
   <project path="external/dwarves" name="platform/external/dwarves" remote="aosp" revision="3c8f7e8b2cf7ff902b71c42d00fda30f30114b07" />
