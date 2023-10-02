@@ -47,6 +47,7 @@
   <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" remote="aosp" revision="refs/tags/android-11.0.0_r46" />
   <project path="external/dwarves" name="platform/external/dwarves" remote="aosp" revision="3c8f7e8b2cf7ff902b71c42d00fda30f30114b07" />
   <project path="external/webp" name="external_webp" groups="pdk,qcom_msm8x26" remote="sudoerz" />
+  <project path="external/freetype" name="external_freetype" groups="pdk" remote="sudoerz" />
 
   <!-- device repos -->
   <project path="device/sudoerz/sepolicy" name="device_sudoerz_sepolicy" remote="sudoerz_naosp" />
