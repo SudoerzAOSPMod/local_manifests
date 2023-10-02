@@ -58,6 +58,7 @@
   <!-- hardware repos -->
   <project path="hardware/interfaces" name="hardware_interfaces" groups="pdk" remote="sudoerz" />
   <project path="hardware/libhardware" name="hardware_libhardware" groups="pdk" remote="sudoerz" />
+  <project path="hardware/libhardware_legacy" name="hardware_libhardware_legacy" groups="pdk" remote="sudoerz" />
   <project path="hardware/sudoerz" name="hardware_sudoerz" remote="sudoerz_naosp" />
   <project path="hardware/xiaomi" name="hardware_xiaomi" remote="sudoerz_naosp" />
   <project path="hardware/qcom-caf/bootctrl" name="LineageOS/android_hardware_qcom_bootctrl" groups="qcom,waipio-vendor" remote="github" revision="lineage-20.0-caf" />
