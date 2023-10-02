@@ -46,6 +46,7 @@
   <project path="external/tinycompress" name="LineageOS/android_external_tinycompress" groups="pdk" remote="github"/>
   <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" remote="aosp" revision="refs/tags/android-11.0.0_r46" />
   <project path="external/dwarves" name="platform/external/dwarves" remote="aosp" revision="3c8f7e8b2cf7ff902b71c42d00fda30f30114b07" />
+  <project path="external/webp" name="external_webp" groups="pdk,qcom_msm8x26" remote="sudoerz" />
 
   <!-- device repos -->
   <project path="device/sudoerz/sepolicy" name="device_sudoerz_sepolicy" remote="sudoerz_naosp" />
@@ -131,7 +132,7 @@
   <project path="vendor/qcom/opensource/commonsys-intf/display" name="LineageOS/android_vendor_qcom_opensource_display-commonsys-intf" groups="qcom,qssi" remote="github" />
   <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="LineageOS/android_vendor_qcom_opensource_data-ipa-cfg-mgr" groups="qcom,waipio-vendor" remote="github" />
   <project path="vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um" name="LineageOS/android_vendor_qcom_opensource_data-ipa-cfg-mgr" groups="qcom,lahaina" remote="github" revision="lineage-20.0-legacy-um" />
-  <project path="vendor/qcom/opensource/dataservices" name="LineageOS/android_vendor_qcom_opensource_dataservices" groups="qcom,waipio-vendor" remote="github" />
+  <project path="vendor/qcom/opensource/dataservices" name="vendor_qcom_opensource_dataservices" groups="qcom,waipio-vendor" remote="sudoerz" />
   <project path="vendor/qcom/opensource/display" name="LineageOS/android_vendor_qcom_opensource_display" remote="github" groups="qcom" />
   <project path="vendor/qcom/opensource/healthd-ext" name="LineageOS/android_vendor_qcom_opensource_healthd-ext" groups="qcom,waipio-vendor" remote="github" />
   <project path="vendor/qcom/opensource/interfaces" name="LineageOS/android_vendor_qcom_opensource_interfaces" groups="qcom,qssi" remote="github" />
