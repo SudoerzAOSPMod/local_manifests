@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="sudoerz"
+           fetch="ssh://git@github.com/SudoerzAOSPMod"
+           revision="refs/heads/14" />
+
+  <remote  name="sudoerz_naosp"
+           fetch="ssh://git@github.com/SudoerzAOSPMod"
+           revision="refs/heads/14" />
+  
+  <remote  name="sudoerz-personal"
+           fetch="ssh://git@github.com/UP5468-GE-ES44AC"
+           revision="refs/heads/14" />
+
+  <!-- Framework repos -->
+  <project path="frameworks/av" name="frameworks_av" groups="pdk-cw-fs,pdk-fs" remote="sudoerz" />
+  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="sudoerz" />
+  <project path="frameworks/native" name="frameworks_native" groups="pdk-cw-fs,pdk-fs" remote="sudoerz" />
+  <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="sudoerz" />
+  <project path="frameworks/opt/calendar" name="frameworks_opt_calendar" groups="pdk-cw-fs,pdk-fs" remote="sudoerz" />
+  <project path="frameworks/opt/colorpicker" name="frameworks_opt_colorpicker" groups="pdk-cw-fs,pdk-fs" remote="sudoerz" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" groups="pdk-cw-fs,pdk-fs" remote="sudoerz" />
+  <project path="frameworks/opt/timezonepicker" name="frameworks_opt_timezonepicker" groups="pdk-cw-fs,pdk-fs" remote="sudoerz" />
+
+  <project path="device/sudoerz/sepolicy" name="device_sudoerz_sepolicy" remote="sudoerz_naosp" />
+  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="sudoerz_naosp" groups="qcom,qssi" />
+  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" groups="qcom,sdm660" remote="sudoerz_naosp" revision="14" />
+  <project path="device/qcom/sepolicy_vndr/legacy-um" name="device_qcom_sepolicy_vndr" groups="qcom,lahaina" remote="sudoerz_naosp" revision="14-legacy-um" />
+  <project path="device/qcom/sepolicy_vndr/sm8450" name="device_qcom_sepolicy_vndr" groups="qcom,waipio-vendor" remote="sudoerz_naosp" revision="14-caf-sm8450" />
+  <project path="device/qcom/sepolicy_vndr/sm8550" name="device_qcom_sepolicy_vndr" groups="qcom,kailua-vendor" remote="sudoerz_naosp" revision="14-caf-sm8550" />
+
+  <!-- General repos -->
+  <project path="build/make" name="build" remote="sudoerz">
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="build_soong" remote="sudoerz" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  <project path="bootable/recovery" name="bootable_recovery" remote="sudoerz" />
+
+  <project path="external/freetype" name="external_freetype" groups="pdk" remote="sudoerz_naosp" />
+
+  <project path="hardware/interfaces" name="hardware_interfaces" remote="sudoerz" groups="pdk,sysui-studio" />
+  <project path="hardware/sudoerz" name="hardware_sudoerz" remote="sudoerz_naosp" groups="pdk,sysui-studio" />
+  <project path="hardware/libhardware" name="hardware_libhardware" remote="sudoerz" groups="pdk" />
+  <project path="hardware/ril" name="hardware_ril" groups="pdk" remote="sudoerz"/>
+
+  <!-- Packages repos -->
+  <project path="packages/apps/Aperture" name="packages_apps_Aperture" remote="sudoerz_naosp" />
+  <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="sudoerz" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="sudoerz" />
+  <project path="packages/modules/adb" name="packages_modules_adb" remote="sudoerz" />
+  <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" remote="sudoerz" />
+  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="sudoerz" />
+  <project path="packages/modules/Permission" name="packages_modules_Permission" remote="sudoerz" />
+  <project path="packages/modules/Wifi" name="packages_modules_Wifi" remote="sudoerz" />
+  <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="sudoerz" />
+  <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="sudoerz" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="sudoerz" />
+  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="sudoerz" />
+  <project path="packages/resources/devicesettings" name="packages_resources_devicesettings" remote="sudoerz_naosp" />
+
+  <!-- System Repos -->
+  <project path="system/core" name="system_core" remote="sudoerz" />
+  <project path="system/update_engine" name="system_update_engine" remote="sudoerz" />
+  <project path="system/vold" name="system_vold" remote="sudoerz" />
+
+  <project path="vendor/sudoerz" name="vendor_sudoerz" remote="sudoerz_naosp" />
+  <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="sudoerz_naosp" />
+  <project path="vendor/support" name="vendor_support" remote="sudoerz_naosp" />
+  
+  <!-- Tools Repos -->
+  <project path="prebuilts/extract-tools" name="prebuilts_extract-tools" remote="sudoerz_naosp" clone-depth="1" />
+  <project path="tools/extract-utils" name="tools_extract-utils" remote="sudoerz_naosp" />
+  <project path="prebuilts/tools-sudoerz" name="prebuilts_tools-sudoerz" remote="sudoerz_naosp" clone-depth="1" />
+</manifest>
