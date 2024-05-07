@@ -1373,7 +1373,7 @@
   <project path="tools/treble" name="platform/tools/treble" groups="tools,pdk" />
   <project path="tools/trebuchet" name="platform/tools/trebuchet" groups="tools,cts,pdk,pdk-cw-fs,pdk-fs" />
 
+  <include name="external/fuckoff.xml" />
   <include name="external/sudoerz.xml" />
   <include name="external/lineage.xml" />
-  <include name="external/fuckoff.xml" />
 </manifest>
