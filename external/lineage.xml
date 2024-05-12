@@ -35,7 +35,7 @@
   <project path="external/tinycompress" name="LineageOS/android_external_tinycompress" remote="github-lineage" />
   <project path="external/wpa_supplicant_8" name="LineageOS/android_external_wpa_supplicant_8" remote="github-lineage" />
   <project path="external/json-c" name="LineageOS/android_external_json-c" remote="github-lineage" groups="qcom,qssi" />
-  <project path="external/webp" name="LineageOS/android_external_webp" groups="pdk,qcom_msm8x26" />
+  <project path="external/webp" name="LineageOS/android_external_webp" remote="github-lineage" groups="pdk,qcom_msm8x26" />
   <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" remote="aosp" revision="refs/tags/android-11.0.0_r46" />
   <project path="external/zstd" name="LineageOS/android_external_zstd" remote="github-lineage" />
   <project path="external/ant-wireless/ant_client" name="LineageOS/android_external_ant-wireless_ant_client" remote="github-lineage" groups="qcom" />
