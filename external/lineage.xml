@@ -77,7 +77,6 @@
   <project path="system/media" name="LineageOS/android_system_media" groups="pdk" remote="github-lineage" />
   <project path="system/netd" name="LineageOS/android_system_netd" groups="pdk" remote="github-lineage" />
   <project path="system/security" name="LineageOS/android_system_security" groups="pdk" remote="github-lineage" />
-  <project path="system/sepolicy" name="LineageOS/android_system_sepolicy" groups="pdk" remote="github-lineage" />
   <project path="system/tools/mkbootimg" name="LineageOS/android_system_tools_mkbootimg" groups="pdk" remote="github-lineage" />
   
   <!-- Vendor repos - QCOM -->

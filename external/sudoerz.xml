@@ -69,8 +69,9 @@
   <project path="packages/resources/devicesettings" name="packages_resources_devicesettings" remote="sudoerz_naosp" />
 
   <!-- System Repos -->
-  <project path="system/core" name="system_core" remote="sudoerz" />
+  <project path="system/core" name="android_system_core" remote="sudoerz" />
   <project path="system/update_engine" name="system_update_engine" remote="sudoerz" />
+  <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="sudoerz" />
   <project path="system/vold" name="system_vold" remote="sudoerz" />
 
   <project path="vendor/sudoerz" name="vendor_sudoerz" remote="sudoerz_naosp" />
